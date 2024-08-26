@@ -1,25 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './components/Header';
+import React from 'react';
+import MainContainer from './components/MainContainer';
+import Courses from './components/Courses';
+import Footer from './components/Footer';
+import Technologo from './components/Technologo';
+import { useState,useEffect } from 'react';
+import LoadingScreen from './components/LoadingScreen';
+import ScrollableHero from './components/ScrollableHero';
+import Text from './components/Text';
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000); // Loading duration (3 seconds)
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+<div className="App">
+      {isLoading ? (
+        <LoadingScreen />
+      ) : (
+        <>
+          <Header />
+          <Text/>
+         <ScrollableHero/>
+          <MainContainer />
+          <Courses />
+          <Technologo />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
 
 export default App;
+
+
