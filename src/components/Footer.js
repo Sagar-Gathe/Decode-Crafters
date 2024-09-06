@@ -1,60 +1,122 @@
-import React from 'react'
+import React from 'react';
+import logo from '../asset/Logos/eagle.png';
+
+
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+
+
+import Typography from "@mui/material/Typography"
+
+
+const footerData = {
+  brand: {
+    name: "Decode Crafters",
+    image: logo,
+    route: "/",
+  },
+  socials: [
+    {
+      icon: <FacebookIcon />,
+      link: "https://www.facebook.com/CreativeTim/",
+    },
+    {
+      icon: <TwitterIcon />,
+      link: "https://twitter.com/creativetim",
+    },
+    {
+      icon: <GitHubIcon />,
+      link: "https://github.com/sagar-gathe",
+    },
+    {
+      icon: <YouTubeIcon />,
+      link: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
+    },
+  ],
+  menus: [
+    {
+      name: "Company",
+      items: [
+        { name: "About Us", href: "https://www.creative-tim.com/presentation" },
+        { name: "Freebies", href: "https://www.creative-tim.com/templates/free" },
+        { name: "Premium Tools", href: "https://www.creative-tim.com/templates/premium" },
+        { name: "Blog", href: "https://www.creative-tim.com/blog" },
+      ],
+    },
+    {
+      name: "Resources",
+      items: [
+        { name: "Illustrations", href: "https://iradesign.io/" },
+        { name: "Bits & Snippets", href: "https://www.creative-tim.com/bits" },
+        { name: "Affiliate Program", href: "https://www.creative-tim.com/affiliates/new" },
+      ],
+    },
+    {
+      name: "Help & Support",
+      items: [
+        { name: "Contact Us", href: "https://www.creative-tim.com/contact-us" },
+        { name: "Knowledge Center", href: "https://www.creative-tim.com/knowledge-center" },
+        { name: "Custom Development", href: "https://services.creative-tim.com/" },
+        { name: "Sponsorships", href: "https://www.creative-tim.com/sponsorships" },
+      ],
+    },
+    {
+      name: "Legal",
+      items: [
+        { name: "Terms & Conditions", href: "https://www.creative-tim.com/terms" },
+        { name: "Privacy Policy", href: "https://www.creative-tim.com/privacy" },
+        { name: "Licenses (EULA)", href: "https://www.creative-tim.com/license" },
+      ],
+    },
+  ],
+  copyright: (
+    <Typography variant="button" fontWeight="regular">
+      All rights reserved. Copyright &copy; {new Date().getFullYear()} Decode Crafters by Eagle Team.
+    </Typography>
+  ),
+};
 
 const Footer = () => {
   return (
-    <div>
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-logo">
-          <img src="" alt="Main Logo" className="footer-logo-img" />
-          <h2>Decode Crafters</h2>
+          <img src={logo} alt="Main Logo" className="footer-logo-img" />
+          <h6>{footerData.brand.name}</h6>
         </div>
 
-        <div className="footer-section">
-          <h3>Company</h3>
-          <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#freebies">Freebies</a></li>
-            <li><a href="#premium-tools">Premium Tools</a></li>
-            <li><a href="#blog">Blog</a></li>
-          </ul>
-        </div>
+        {footerData.menus.map((menu, index) => (
+          <div className="footer-section" key={index}>
+            <h3>{menu.name}</h3>
+            <ul>
+              {menu.items.map((item, idx) => (
+                <li key={idx}>
+                  <a href={item.href}>{item.name}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
 
-        <div className="footer-section">
-          <h3>Resources</h3>
-          <ul>
-            <li><a href="#illustrations">Illustrations</a></li>
-            <li><a href="#bits-snippets">Bits & Snippets</a></li>
-            <li><a href="#affiliate-program">Affiliate Program</a></li>
-          </ul>
-        </div>
-
-        <div className="footer-section">
-          <h3>Help & Support</h3>
-          <ul>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#knowledge-center">Knowledge Center</a></li>
-            <li><a href="#custom-development">Custom Development</a></li>
-            <li><a href="#sponsorships">Sponsorships</a></li>
-          </ul>
-        </div>
-
-        <div className="footer-section">
-          <h3>Legal</h3>
-          <ul>
-            <li><a href="#terms-conditions">Terms & Conditions</a></li>
-            <li><a href="#privacy-policy">Privacy Policy</a></li>
-            <li><a href="#licenses">Licenses (EULA)</a></li>
-          </ul>
+        <div className="footer-section socials">
+          <h3>Follow Us</h3>
+          <div className="social-icons">
+            {footerData.socials.map((social, index) => (
+              <a key={index} href={social.link} target="_blank" rel="noopener noreferrer">
+                {social.icon}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>All rights reserved. Copyright © 2024 Decode Crafters by Eagle Team.</p>
+        {footerData.copyright}
       </div>
-    </footer>  
-    </div>
-  )
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

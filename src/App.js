@@ -8,13 +8,12 @@ import Technologo from './components/Technologo';
 import { useState,useEffect } from 'react';
 import LoadingScreen from './components/LoadingScreen';
 import ScrollableHero from './components/ScrollableHero';
-import Text from './components/Text';
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000); // Loading duration (3 seconds)
+    }, 2000); 
     return () => clearTimeout(timer);
   }, []);
 
@@ -26,7 +25,6 @@ function App() {
       ) : (
         <>
           <Header />
-          <Text/>
          <ScrollableHero/>
           <MainContainer />
           <Courses />

@@ -3,7 +3,6 @@ import Logo1 from "../asset/Logos/angular.jpg";
 import Logo2 from "../asset/Logos/icon-tailwind.jpg";
 import Logo3 from "../asset/Logos/sketch.jpg";
 import Logo4 from "../asset/Logos/vue.jpg";
-// import Logo5 from "../asset/Logos/bootstrap5.jpg";
 import Logo6 from "../asset/Logos/java.png"
 import Logo7 from "../asset/Logos/react.jpg"
 
@@ -16,10 +15,10 @@ const logos = [Logo1, Logo2, Logo4, Logo3,Logo6,Logo7];
 
 const settings = {
   infinite: true,
-  slidesToShow: 5, // Number of logos visible at once
+  slidesToShow: 5, 
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 1000, // Speed of sliding
+  autoplaySpeed: 1000, 
   arrows: false,
   pauseOnHover: true,
 };

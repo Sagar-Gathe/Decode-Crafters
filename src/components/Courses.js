@@ -4,29 +4,49 @@ import ListGroup from "react-bootstrap/ListGroup";
 import cardData from "./mockData";
 
 const Courses = () => {
+  const [searchTerm, setSearchTerm] = React.useState("");
+
+  const filteredCards = cardData.filter((data) =>
+    data.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
-    <div className="main-course">
-      {cardData.map((data, index) => (
-        <Card style={{ width: "18rem", margin: "10px" }} key={index}>
-          <Card.Img variant="top" src={data.image} alt={data.title} />
-          <Card.Body>
-            <Card.Title>{data.title}</Card.Title>
-            <Card.Text>{data.text}</Card.Text>
-          </Card.Body>
-          <ListGroup className="list-group-flush">
-            {data.listItems.map((item, index) => (
-              <ListGroup.Item key={index}>{item}</ListGroup.Item>
-            ))}
-          </ListGroup>
-          <Card.Body>
-            {data.links.map((link, index) => (
-              <Card.Link href="#" key={index}>
-                {link}
-              </Card.Link>
-            ))}
-          </Card.Body>
-        </Card>
-      ))}
+    <div className="main-course-container">
+      <div className="course-header">
+        <h2>Explore Our Courses</h2>
+        <p>Find the perfect course to enhance your skills and advance your career.</p>
+      </div>
+      <div className="course-search">
+        <input
+          type="text"
+          placeholder="Search courses..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+      </div>
+      <div className="main-course">
+        {filteredCards.map((data, index) => (
+          <Card style={{ width: "18rem", margin: "10px" }} key={index}>
+            <Card.Img variant="top" src={data.image} alt={data.title} />
+            <Card.Body>
+              <Card.Title className="course-title">{data.title}</Card.Title>
+              <Card.Text>{data.text}</Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush">
+              {data.listItems.map((item, index) => (
+                <ListGroup.Item key={index}>{item}</ListGroup.Item>
+              ))}
+            </ListGroup>
+            <Card.Body>
+              {data.links.map((link, index) => (
+                <Card.Link href="#" key={index}>
+                  {link}
+                </Card.Link>
+              ))}
+            </Card.Body>
+          </Card>
+        ))}
+      </div>
     </div>
   );
 };

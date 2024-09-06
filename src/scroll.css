@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Courgette|Roboto');
+@import url("https://fonts.googleapis.com/css?family=Courgette|Roboto");
 
 * {
   box-sizing: border-box;
@@ -6,13 +6,14 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   overflow-x: hidden;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .scrollable-hero {
@@ -49,36 +50,50 @@ figure {
   z-index: -1;
 }
 
+.text-content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-60%);
+  z-index: 1;
+  padding: 2rem;
+  color: rgb(8, 8, 56);
+  max-width: 400px;
+  border-radius: 8px;
+  text-align: left;
+}
+.hero__title {
+  font-family: "Arial", serif;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  color: orange;
+}
+
+.hero__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
 .hero:nth-child(1) figure {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/photo-1506260408121-e353d10b87c7.jpg');
+  background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaHxlbnwwfHwwfHx8MA%3D%3D");
 }
 
 .hero:nth-child(2) figure {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/photo-1506744038136-46273834b3fb.jpg');
+  background-image: url("https://images.unsplash.com/photo-1556761175-4b46a572b786");
 }
 
 .hero:nth-child(3) figure {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/photo-1523712999610-f77fbcfc3843.jpg');
+  background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c");
 }
 
 .hero:nth-child(4) figure {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/photo-1501785888041-af3ef285b470.jpg');
-}
-
-.hero__title {
-  color: white;
-  font-family: 'Courgette', serif;
-  font-size: 8vw;
-  letter-spacing: -0.125rem;
-  text-align: center;
-  z-index: 1;
-  padding: 0 1rem;
-}
-
-@media (min-width: 1200px) {
-  .hero__title {
-    font-size: 6rem;
-  }
+  background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaHxlbnwwfHwwfHx8MA%3D%3D");
 }
 
 .content {
@@ -95,7 +110,7 @@ figure {
 }
 
 .content__title {
-  font-family: 'Courgette', serif;
+  font-family: "Courgette", serif;
   font-size: 3rem;
   line-height: 1.25;
   letter-spacing: -0.125rem;
@@ -108,7 +123,7 @@ figure {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 4rem;
-  font-family: 'Courgette', serif;
+  font-family: "Courgette", serif;
   font-size: 1.5rem;
   letter-spacing: -0.125rem;
   text-align: center;
@@ -116,10 +131,10 @@ figure {
 
 .content__author:before,
 .content__author:after {
-  content: '';
+  content: "";
   flex: 1;
   height: 2px;
-  background-color: #A9DFBF;
+  background-color: #a9dfbf;
 }
 
 .content__author:before {
@@ -131,7 +146,7 @@ figure {
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
@@ -140,7 +155,7 @@ p {
 blockquote {
   position: relative;
   padding-left: 1.5rem;
-  font-family: 'Courgette', serif;
+  font-family: "Courgette", serif;
   font-size: 2rem;
   line-height: 1.25;
   letter-spacing: -0.05rem;
@@ -148,12 +163,12 @@ blockquote {
 }
 
 blockquote:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 6px;
   height: 100%;
-  background-color: #A9DFBF;
+  background-color: #a9dfbf;
   border-radius: 60px;
 }

@@ -3,7 +3,7 @@ const cardData = [
   {
     title: 'React Basics',
     text: 'Learn the fundamentals of React, a popular JavaScript library for building user interfaces.',
-    image: 'https://img.freepik.com/free-photo/abstract-pastel-background-with-gradient-effect-generated-by-ai_188544-9886.jpg',
+    image: 'https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/5992673/cover_image/retina_1708x683/1005_Design-Patterns-in-React_Cover-44247834a5b31e8d08e5bbbdac4a6750.png',
     listItems: ['JSX', 'Components', 'State Management'],
     links: ['React Documentation', 'React Tutorial'],
     courses: ['React'],
@@ -12,7 +12,7 @@ const cardData = [
   {
     title: 'Advanced React',
     text: 'Dive deeper into React with hooks, context API, and advanced patterns.',
-    image: 'https://img.freepik.com/free-photo/colorful-abstract-background-with-oil-painting-technique-generated-by-ai_188544-9873.jpg',
+    image: 'https://www.patterns.dev/img/reactjs/react-logo@3x.svg',
     listItems: ['Hooks', 'Context API', 'Higher-Order Components'],
     links: ['Advanced React Guide', 'React Patterns'],
     courses: ['React', 'React Hooks'],
@@ -21,7 +21,7 @@ const cardData = [
   {
     title: 'Node.js Essentials',
     text: 'Understand the basics of Node.js for server-side programming.',
-    image: 'https://img.freepik.com/free-photo/abstract-pastel-background-with-mesh-effect-generated-by-ai_188544-9885.jpg',
+    image: 'https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_960_720.png',
     listItems: ['Event Loop', 'Express.js', 'APIs'],
     links: ['Node.js Documentation', 'Express Guide'],
     courses: ['Node.js', 'Express.js'],
@@ -30,7 +30,7 @@ const cardData = [
   {
     title: 'Full-Stack JavaScript',
     text: 'Learn to build full-stack applications using JavaScript, from front-end to back-end.',
-    image: 'https://img.freepik.com/free-photo/abstract-pastel-background-with-gradient-effect-generated-by-ai_188544-9886.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFX9mNYv1We2nYQ2SD4cHsxBrEouMGxmwE8Q&s',
     listItems: ['React', 'Node.js', 'MongoDB'],
     links: ['MERN Stack', 'Full-Stack Course'],
     courses: ['MERN Stack', 'Full-Stack JavaScript'],
@@ -39,7 +39,7 @@ const cardData = [
   {
     title: 'Python for Data Science',
     text: 'Explore data science techniques using Python libraries like Pandas and NumPy.',
-    image: 'https://img.freepik.com/free-photo/abstract-gradient-pink-purple-background-generated-by-ai_188544-9901.jpg',
+    image: 'https://img-c.udemycdn.com/course/750x422/919038_3ae1_13.jpg',
     listItems: ['Pandas', 'NumPy', 'Matplotlib'],
     links: ['Pandas Documentation', 'NumPy Guide'],
     courses: ['Python', 'Data Science'],
@@ -48,7 +48,7 @@ const cardData = [
   {
     title: 'Machine Learning with Python',
     text: 'Learn how to implement machine learning algorithms using Python.',
-    image: 'https://img.freepik.com/free-photo/colorful-abstract-background-with-fluid-pattern-generated-by-ai_188544-9878.jpg',
+    image: 'https://cdn.pixabay.com/photo/2024/01/29/22/47/ai-generated-8540915_960_720.jpg',
     listItems: ['Supervised Learning', 'Unsupervised Learning', 'Scikit-learn'],
     links: ['Machine Learning Guide', 'Scikit-learn Documentation'],
     courses: ['Machine Learning', 'Python'],
@@ -57,7 +57,7 @@ const cardData = [
   {
     title: 'Angular for Beginners',
     text: 'Get started with Angular and build dynamic web applications.',
-    image: 'https://img.freepik.com/free-photo/abstract-pastel-background-with-fluid-pattern-generated-by-ai_188544-9882.jpg',
+    image: 'https://www.openlogic.com/sites/default/files/image/2023-01/image-blog-openlogic-what-is-angularjs-1.png',
     listItems: ['Components', 'Directives', 'Services'],
     links: ['Angular Documentation', 'Angular Tutorial'],
     courses: ['Angular'],
@@ -66,7 +66,7 @@ const cardData = [
   {
     title: 'Vue.js Fundamentals',
     text: 'Learn the core concepts of Vue.js and build interactive web applications.',
-    image: 'https://img.freepik.com/free-photo/abstract-pastel-background-with-gradient-pattern-generated-by-ai_188544-9880.jpg',
+    image: 'https://api.otakoyi.software/uploads/content/2023/11/20/1280/vuejs-and-seo--your-steps-to-take-to-become-more-seo-friendly-317x237.webp',
     listItems: ['Directives', 'Vue Router', 'Vuex'],
     links: ['Vue.js Guide', 'Vue.js Best Practices'],
     courses: ['Vue.js'],
@@ -75,7 +75,7 @@ const cardData = [
   {
     title: 'TypeScript Essentials',
     text: 'Master TypeScript to write robust and maintainable JavaScript code.',
-    image: 'https://img.freepik.com/free-photo/colorful-abstract-background-with-fluid-painting-generated-by-ai_188544-9877.jpg',
+    image: 'https://www.orientsoftware.com/Themes/Content/Images/blog/2023-11-13/typescript-introduction.jpg',
     listItems: ['Type Annotations', 'Interfaces', 'Generics'],
     links: ['TypeScript Handbook', 'TypeScript Tutorial'],
     courses: ['TypeScript'],
@@ -84,7 +84,7 @@ const cardData = [
   {
     title: 'Database Management with SQL',
     text: 'Learn SQL to manage and manipulate relational databases efficiently.',
-    image: 'https://img.freepik.com/free-photo/abstract-pastel-background-with-oil-painting-pattern-generated-by-ai_188544-9874.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8f_zPxdTAO0x2VC8o47eRCdMhGmn0IDnBA&s',
     listItems: ['Joins', 'Subqueries', 'Transactions'],
     links: ['SQL Tutorial', 'Database Design'],
     courses: ['SQL', 'Database Management'],
@@ -93,7 +93,7 @@ const cardData = [
   {
     title: 'Docker for Developers',
     text: 'Understand the basics of Docker and how to containerize applications.',
-    image: 'https://img.freepik.com/free-photo/abstract-gradient-pink-purple-background-generated-by-ai_188544-9901.jpg',
+    image: 'https://static1.howtogeekimages.com/wordpress/wp-content/uploads/csit/2021/04/075c8694.jpeg',
     listItems: ['Containers', 'Docker Compose', 'Docker Hub'],
     links: ['Docker Documentation', 'Docker Compose Guide'],
     courses: ['Docker'],
@@ -102,7 +102,7 @@ const cardData = [
   {
     title: 'DevOps with CI/CD',
     text: 'Learn continuous integration and continuous deployment practices using DevOps tools.',
-    image: 'https://img.freepik.com/free-photo/colorful-abstract-background-with-fluid-painting-effect-generated-by-ai_188544-9879.jpg',
+    image: 'https://media.istockphoto.com/id/1489620329/photo/hand-of-human-putting-hexagon-piece-to-full-fill-the-part-of-software-development-and-it.webp?s=2048x2048&w=is&k=20&c=sip3reNENIXj23OURx_oJdAVxthyLGvzTm0pr553fM4=',
     listItems: ['Jenkins', 'CI/CD Pipelines', 'Automation'],
     links: ['Jenkins Documentation', 'CI/CD Best Pract'],
     courses: ['DevOps', 'CI/CD'],
