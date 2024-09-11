@@ -543,6 +543,10 @@
   box-sizing: border-box;
 }
 
+.custom-card:hover {
+  transform: scale(1.05); 
+}
+
 @media (max-width: 1024px) {
   .main-course {
     grid-template-columns: repeat(2, 1fr);
@@ -838,3 +842,5 @@
   color: #333;
   margin-top: 20px;
 }
+
+
